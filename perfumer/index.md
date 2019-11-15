@@ -2,6 +2,7 @@
 layout: default
 title: Perfumer
 nav_order: 1
+has_children: true
 ---
 
 Perfumer is generator of PHP classes.
@@ -57,7 +58,7 @@ There is no need to specify properties of annotations, if contract method scope 
 interface MyClass
 {
     /**
-     * Skip 'a="a", b="b"' declaration 
+     * Skip 'a="a", b="b"' declaration as generator will do it itself
      * @Math\Sum(out="x")
      *
      * @Math\Multiply(a="x", b="c", out="y")
