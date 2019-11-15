@@ -1,3 +1,9 @@
+---
+layout: default
+title: Perfumer
+nav_order: 1
+---
+
 Perfumer is generator of PHP classes.
 
 ### Basic example
