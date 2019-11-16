@@ -7,6 +7,13 @@ has_children: true
 
 Perfumer is generator of PHP classes.
 
+### How it works
+
+Perfumer based on Doctrine Annotations library.
+When you want to generate some class you create interface or abstract class with an abstract method.
+Then declare some special annotations in the order you want them to execute.
+Every single annotation generates some piece of code.
+
 ### Basic example
 
 We have a class with math functions.
@@ -26,7 +33,7 @@ class Math
 }
 ```
 
-We want to make a class with method sumThenMultiply():
+We want to generate a class with method sumThenMultiply():
 
 ```php
 interface MyClass
