@@ -3,6 +3,7 @@ layout: default
 title: Validation cycle
 nav_order: 2
 parent: Perfumer
+nav_exclude: true
 ---
 
 Perfumer constructs validation cycle in each generated method.

@@ -3,6 +3,7 @@ layout: default
 title: Controllers
 nav_order: 1
 parent: Perfumer
+nav_exclude: true
 ---
 
 The main usage of Perfumer in Framework is to generate controllers. 

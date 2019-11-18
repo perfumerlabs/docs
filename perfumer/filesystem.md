@@ -3,6 +3,7 @@ layout: default
 title: Filesystem
 nav_order: 1
 parent: Perfumer
+nav_exclude: true
 ---
 
 Typical Perfumer project filesystem looks like the following:

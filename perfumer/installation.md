@@ -3,6 +3,7 @@ layout: default
 title: Installation
 nav_order: 3
 parent: Perfumer
+nav_exclude: true
 ---
 
 Add to composer.json
