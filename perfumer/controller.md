@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Controllers
-nav_order: 1
-parent: Perfumer
 nav_exclude: true
 ---
 
