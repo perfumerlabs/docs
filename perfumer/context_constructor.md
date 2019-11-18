@@ -44,3 +44,5 @@ class MyService extends \Generated\MyProject\Service\MyService
     }
 }
 ```
+
+CAUTION. Perfumer doesn't inject dependencies to Framework service definition. You have to do it manually.
