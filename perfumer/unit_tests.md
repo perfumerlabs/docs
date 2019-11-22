@@ -57,3 +57,27 @@ class MathTest extends \Generated\Tests\Context\MathTest
 ```
 
 The test is done!
+
+### Overriding assertion function
+
+By default Perfumer applies "assertEquals" assertion to test. 
+If another assertion function is needed you have to override "assertTest{method_name}" test method.
+
+```php
+class MathTest extends \Generated\Tests\Context\MathTest
+{
+    public function sumDataProvider()
+    {
+        return [
+            [1, 2, 3],
+            [2, 2, 4],
+        ];
+    }
+    
+    protected function assertTestSum($expected, $result)
+    {
+        // Override this assertion if needed
+        $this->assertEquals($expected, $result);
+    }
+}
+```
