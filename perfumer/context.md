@@ -6,7 +6,7 @@ parent: Perfumer
 ---
 
 Context is any class that has methods which we want to use in contracts.
-Contexts divides into 2 kinds: classes with constructor and classes without constructor (or ither dependencies).
+Contexts divides into 2 kinds: classes with constructor and classes without constructor (or other dependencies).
 
 In case context doesn't have constructor Perfumer can easily instantiate the object and use it.
 
