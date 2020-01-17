@@ -12,6 +12,8 @@ Methods of Context are subject to test. Perfumer auto-generates all boilerplate 
 To generate test add @Test annotation to desirable method.
 
 ```php
+use Perfumerlabs\Perfumer\ContextAnnotation\Test;
+
 class Math
 {
     /**
