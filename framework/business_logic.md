@@ -18,19 +18,19 @@ There are 4 types of classes: Repository, Domain, Facade and Service.
 
 ##### Repositories
 
-Usually are located at `src/MyModule/Repository/`.
+Usually are located at `src/MyPackage/Repository/`.
 Repository must be named with the name of model which repository manages.
 Repository contains methods querying database with `SELECT` operations.
 
 ##### Domains
 
-Usually are located at `src/MyModule/Domain/`.
+Usually are located at `src/MyPackage/Domain/`.
 Domain must be named with the name of model which domain manages.
 Domain contains methods querying database with `INSERT`, `UPDATE`, `DELETE` operations.
 
 ##### Facades
 
-Usually are located at `src/MyModule/Facade/`.
+Usually are located at `src/MyPackage/Facade/`.
 Facade must be named with the name of model which facade manages.
 Generally, `Facade` is what the term "facade" means in terms of programming patterns.
 See [Wikipedia](https://en.wikipedia.org/wiki/Facade_pattern) or similar articles.
@@ -40,6 +40,6 @@ Facade is injected by domains and repositories.
 
 ##### Services
 
-Usually are located at `src/MyModule/Service/`.
+Usually are located at `src/MyPackage/Service/`.
 Services deal with functionality which is not connected with models persistence.
 For example. it can be network services such as email or sms sending layers.

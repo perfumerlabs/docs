@@ -20,10 +20,10 @@ class Application extends \Perfumer\Framework\Application\Application
         $this->addResources(__DIR__ . '/../vendor/perfumer/framework/src/Package/Framework/Resource/config/resources.php');
 
         // Custom services
-        $this->addDefinitions(__DIR__ . '/MyModule/Resource/config/services.php');
+        $this->addDefinitions(__DIR__ . '/MyPackage/Resource/config/services.php');
 
         // Custom resources
-        $this->addResources(__DIR__ . '/MyModule/Resource/config/resources.php');
+        $this->addResources(__DIR__ . '/MyPackage/Resource/config/resources.php');
 
         // Built-in modules
         $this->addModule(new HttpModule(),    'http');

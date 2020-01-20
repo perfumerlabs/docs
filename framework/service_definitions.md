@@ -7,7 +7,7 @@ parent: Framework
 
 ### How to write Container service definitions
 
-Service definition in Framework is a PHP array that describes instantiation of some class. They are written in separate config files, usually it is `MyModule/Resource/config/services.php`,
+Service definition in Framework is a PHP array that describes instantiation of some class. They are written in separate config files, usually it is `MyPackage/Resource/config/services.php`,
 though it depends from particular project.
 
 Fast example:
@@ -21,7 +21,7 @@ return [
         'shared' => true,
         
         // Name of the class
-        'class' => 'MyModule\\Service\\MyClass',
+        'class' => 'MyPackage\\Service\\MyClass',
 
         // Arguments to inject to constructor in the order specified
         // Argument with "#" means that this is instance of the service "my_other_service"
@@ -74,7 +74,7 @@ Sometimes it is needed to do some actions right after instantiation.
 
 return [
     'my_service' => [
-        'class' => 'MyModule\\Service\\MyClass',
+        'class' => 'MyPackage\\Service\\MyClass',
         'after' => function(Container $container, MyClass $my_class) {
             $my_dep = $container->get('my_dep');
 
@@ -96,7 +96,7 @@ In this case keyword `static` will do what is needed.
 
 return [
     'my_service' => [
-        'class' => 'MyModule\\Service\\MyClass',
+        'class' => 'MyPackage\\Service\\MyClass',
         'static' => 'makeInstance'
     ]
 ];
@@ -125,7 +125,7 @@ In this case write definition like following:
 
 return [
     'my_service' => [
-        'class' => 'MyModule\\Service\\MyClass',
+        'class' => 'MyPackage\\Service\\MyClass',
         'arguments' => ['$1', '$2']
     ]
 ];

@@ -97,21 +97,21 @@ You don't need to set template name in action as controller automatically set a 
 The name of template would be `<templates-dir>/<controller-name>/<action-name>`.
 For example, template name for `MyPageController` would be `<templates-dir>/my-page/get.twig`.
  
- ### Serialize controller
+### Serialize controller
  
- Serialize controller is used to render content as serialized string.
- For example, to json in ajax requests.
+Serialize controller is used to render content as serialized string.
+For example, to json in ajax requests.
  
- ```php
- class MyController extends SerializeController
- {
-     protected function get()
-     {
-         $name = $this->f('name');
-     
-         $this->getView()->addVar('name', $name);
-     }
- }
+```php
+class MyController extends SerializeController
+{
+    protected function get()
+    {
+        $name = $this->f('name');
+    
+        $this->getView()->addVar('name', $name);
+    }
+}
  ```
 
 As the default serialization is JSON this controller will output `{"name": "<name>"}`.

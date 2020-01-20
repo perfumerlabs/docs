@@ -7,7 +7,7 @@ parent: Framework
 
 ### Parameters
 
-Parameters are written in separate config files, usually it is `MyModule/Resource/config/resources.php`,
+Parameters are written in separate config files, usually it is `MyPackage/Resource/config/resources.php`,
 though it depends from particular project.
 
 Fast example:
@@ -46,7 +46,7 @@ class MyController extends LayoutController
 
 return [
     'my_service' => [
-        'class' => 'MyModule\\Service\\MyClass',
+        'class' => 'MyPackage\\Service\\MyClass',
         'arguments' => ['@my_group/my_param1']
     ]
 ];
