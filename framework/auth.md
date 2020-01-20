@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Authentication
-nav_order: 12
+nav_order: 10
 parent: Framework
 ---
 

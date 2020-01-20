@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Templating
-nav_order: 11
+nav_order: 5
 parent: Framework
 ---
 
