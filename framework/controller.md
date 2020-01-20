@@ -213,7 +213,7 @@ class MyController extends TemplateController
 
 ##### Forwarding
 
-This feature when it is needed to "redirect" internally to another controller
+This feature is used when it is needed to "redirect" internally to another controller
 
 ```php
 class SnippetController extends TemplateController
