@@ -134,7 +134,7 @@ return [
 And then call it in controller:
 
 ```php
-class MyClass extends LayoutController
+class MyController extends LayoutController
 {
     public function get()
     {

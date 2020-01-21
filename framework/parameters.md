@@ -29,7 +29,7 @@ Parameter must be part of some group.
 ### How to get parameter in controller
 
 ```php
-class MyClass extends LayoutController
+class MyController extends LayoutController
 {
     public function get()
     {
