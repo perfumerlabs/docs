@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Module
-nav_order: 8
+nav_order: 14
 parent: Framework
 ---
 
@@ -21,7 +21,7 @@ Add new class to `src/MyPackage/Module/` directory like following:
 ```php
 use Perfumer\Framework\Controller\Module;
 
-class MyModule extends Module
+class MyPackage extends Module
 {
     // Name of the module
     public $name = 'my_module';
