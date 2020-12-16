@@ -2,7 +2,7 @@
 layout: default
 title: Context
 nav_order: 3
-parent: Perfumer
+parent: Generator
 ---
 
 Context is any class that has methods which we want to use in contracts.

@@ -2,7 +2,7 @@
 layout: default
 title: Unit tests
 nav_order: 6
-parent: Perfumer
+parent: Generator
 ---
 
 ## Unit tests generating

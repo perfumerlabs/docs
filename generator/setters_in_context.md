@@ -2,7 +2,7 @@
 layout: default
 title: Setters in context
 nav_order: 2
-parent: Perfumer
+parent: Generator
 ---
 
 Setters may be declared in context method.

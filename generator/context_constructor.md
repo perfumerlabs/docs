@@ -2,7 +2,7 @@
 layout: default
 title: Context constructor
 nav_order: 5
-parent: Perfumer
+parent: Generator
 ---
 
 Perfumer suggests means to generate class constructor.

@@ -2,7 +2,7 @@
 layout: default
 title: Validation
 nav_order: 2
-parent: Perfumer
+parent: Generator
 ---
 
 At the moment, no validation annotations are in standard package. 

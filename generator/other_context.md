@@ -2,7 +2,7 @@
 layout: default
 title: Other contexts
 nav_order: 4
-parent: Perfumer
+parent: Generator
 ---
 
 In this chapter we consider special types of contexts.

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Perfumer
+title: Generator
 nav_order: 1
 has_children: true
 ---
 
-Perfumer is generator of PHP classes.
+This is generator of PHP classes.
 
 ### How it works
 
@@ -15,7 +15,7 @@ Perfumer creates a class implementing that interface and generates some piece of
 
 ### Concept
 
-Mainly, Perfumer is used in Framework to generate controllers (although it can generate any class). 
+Mainly, Generator is used in Framework to generate controllers (although it can generate any class). 
 
 Every controller has the same lifecycle:
 

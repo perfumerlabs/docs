@@ -2,7 +2,7 @@
 layout: default
 title: Setters
 nav_order: 1
-parent: Perfumer
+parent: Generator
 ---
 
 Setters are annotations which define initial variables.
