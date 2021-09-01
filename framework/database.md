@@ -23,6 +23,16 @@ Generated propel models are usually at `src/MyPackage/Model`.
 1. Generate models with command `php cli/dev framework propel/model/build`.
 1. If you need rollback migration run `php cli/dev framework propel/migration/down`.
 
+### Migration files
+
+Keep in mind, ALWAYS review your migration files to check if generated SQL corresponds to XML schemas changes.
+Remove any changes that does not reflect to changes.
+Known issues with migrations:
+
+- if a column has "sqlType=jsonb", then every `propel/diff` generates a query like `ALTER TABLE "my_table" ALTER COLUMN "my_column" TYPE jsonb USING NULL;`
+- if a column has "sqlType=cidr", then every `propel/diff` generates a query like `ALTER TABLE "my_table" ALTER COLUMN "my_column" TYPE cidr USING NULL;`
+- Propel does not deal well with different `type` and `sqlType` for now
+
 ### Querying, behaviours, etc
 
 Any documentation regarding usage of ORM you can find at official [Propel ORM site](http://propelorm.org/). 
