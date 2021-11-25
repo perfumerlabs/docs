@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Controller
-nav_order: 2
+nav_order: 20
 parent: Framework
 ---
 
@@ -213,7 +213,8 @@ class MyController extends TemplateController
 
 ##### Forwarding
 
-This feature is used when it is needed to "redirect" internally to another controller
+This feature is used when it is needed to "redirect" internally to another controller.
+Very similar to Symfony's [Request Forwarding](https://symfony.com/doc/current/controller/forwarding.html).
 
 ```php
 class SnippetController extends TemplateController
@@ -242,7 +243,7 @@ class MyController extends TemplateController
 ##### Deferring
 
 This feature is based on `fastcgi_finish_request` PHP function.
-After this function executed PHP returns content to web server (and it returns it to browser).
+After this function called, PHP returns content to web server (and it returns it to browser).
 So any code after `fastcgi_finish_request` does not affect client performance.
 `defer` registers controller and execute it after response sent to client.
 This feature is used to do some long lasting work like email sending, network requests, etc.
@@ -261,6 +262,26 @@ class DeferredController extends PlainController
     protected function hardWork($foo, $bar)
     {
         // do hard work like email sending
+    }
+}
+```
+
+##### Deferring lambdas
+
+There is also possibility to register only a lambda function for deferring.
+Use when it is needed to execute small amount of code.
+
+```php
+class MyController extends TemplateController
+{
+    protected function get()
+    {
+        $my_service = $this->s('my-service');
+        $data = 'some data ...';
+
+        $this->deferCallable(function() use ($my_service, $data) {
+            $my_service->do($data);
+        });
     }
 }
 ```
